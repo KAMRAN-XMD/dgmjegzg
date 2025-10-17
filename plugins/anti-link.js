@@ -66,7 +66,7 @@ cmd({
       if (warningCount < 1) {
         // Send warning message
         await conn.sendMessage(from, {
-          text: `‎*⚠️DUA FATIMA LINKS ARE NOT ALLOWED⚠️*\n` +
+          text: `‎*⚠️LINKS ARE NOT ALLOWED⚠️*\n` +
                 `*╭────⬡ WARNING ⬡────*\n` +
                 `*├▢ USER :* @${sender.split('@')[0]}!\n` +
                 `*├▢ COUNT : ${warningCount}*\n` +
@@ -78,7 +78,7 @@ cmd({
       } else {
         // Remove user if they exceed warning limit
         await conn.sendMessage(from, {
-          text: `@${sender.split('@')[0]} *DUA FATIMA HAS BEEN REMOVED - WARN LIMIT EXCEEDED!*`,
+          text: `@${sender.split('@')[0]} HAS BEEN REMOVED - WARN LIMIT EXCEEDED!*`,
           mentions: [sender]
         });
         await conn.groupParticipantsUpdate(from, [sender], "remove");
