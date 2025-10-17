@@ -10,7 +10,7 @@ cmd({ on: "body" }, async (conn, m, msg, { from, body }) => {
 
     for (const keyword in voiceMap) {
       if (body.toLowerCase() === keyword.toLowerCase()) {
-        if (config.AUTO_VOICE === "true") {
+        if (config.AUTO_VOICE === "false") {
           const audioUrl = voiceMap[keyword];
 
           // Ensure it's a .mp3 or .m4a file
